@@ -1,0 +1,125 @@
+.card {
+  grid-area: card;
+  border: 0.2rem solid $card-border-color;
+  border-radius: 1rem;
+  padding: 4rem 0 0 5rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__block {
+    max-width: 33rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    &--green {
+      background-color: $color-green;
+    }
+    &--pink {
+      background-color: $color-pink;
+    }
+    &--blue {
+      background-color: $color-blue;
+    }
+    &--squareOuterLarge {
+      position: relative;
+      display: flex;
+      margin-right: 10rem;
+      width: 15vw;
+      min-width: 12rem;
+      min-height: 13rem;
+      border: 0.1rem solid black;
+      border-radius: 1.5rem;
+
+      &:before {
+        display: block;
+        content: "";
+        padding-top: 100%;
+      }
+    }
+
+    &--squareOuterMedium {
+      margin-right: 3rem;
+      position: relative;
+      display: flex;
+      width: 6vw;
+      min-width: 8rem;
+      min-height: 8rem;
+      border: 0.1rem solid black;
+      border-radius: 1.5rem;
+
+      &:before {
+        display: block;
+        content: "";
+        padding-top: 100%;
+      }
+    }
+
+    &--squareInner {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 95%;
+      width: 95%;
+      border-radius: 1.5rem;
+    }
+  }
+  // TEXT INSIDE THE SQUARE
+  &__label {
+    &--large {
+      @include label;
+      font-size: 5rem;
+      bottom: 0px;
+      text-shadow: 0.3rem 0 #fff;
+    }
+    &--medium {
+      @include label;
+      font-size: 3rem;
+      bottom: 0px;
+      text-shadow: 0.2rem 0 #fff;
+    }
+  }
+
+  &__description {
+    margin: 2rem auto 1rem 2rem;
+    font-weight: 900;
+    max-width: 15rem;
+    hyphens: auto;
+    font-size: $description-font-size;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+     color: darkgray;
+    }
+  }
+}
+
+// TEXT DESCRIPTION DOT
+.dot {
+  position: relative;
+  top: 0.8rem;
+  right: 1.5rem;
+  font-size: 5rem;
+  line-height: 0%;
+  display: inline-block;
+  text-align: left;
+  width: 0.5rem;
+  text-align: center;
+  opacity: 0.5;
+  margin-left: -1rem;
+}
+
+.active {
+  opacity: 0.5;
+}
+
+// .card__block{
+//   display: none;
+// }
+
+
+.buyFont {
+  display: none;
+}

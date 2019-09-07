@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Test</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <head>
+        <div class="nav">
+          <h1 class="nav__title">Please select one font</h1>
+
+          <!-- NAVIGATION TAB -->
+          <nav class="nav__links">
+            <a class="nav__btn" href="#myFonts">My fonts</a>
+            <a class="nav__btn nav__btn--active" href="#buyFonts">Buy fonts</a>
+          </nav>
+        </div>
+      </head>
+
+      <!-- CARDS COMPONENT -->
+      <main class="card card_area" id="myFonts">
+        <div class="card__block">
+          <div class="card__block--squareOuterLarge">
+            <div class="card__block--squareInner card__block--green">
+              <span class="card__label--large">M</span>
+            </div>
+          </div>
+
+          <div class="card__description">
+            <span class="dot"> &bull;</span> Merriweather project is led by
+            Sorkin Type
+          </div>
+        </div>
+
+        <div>
+          <div class="card__block active">
+            <div class="card__block--squareOuterMedium">
+              <div class="card__block--squareInner card__block--pink">
+                <span class="card__label--medium">R</span>
+              </div>
+            </div>
+
+            <div class="card__description">
+              <span class="dot"> &bull;</span> Roboto doesn't compromise,
+              allowing letters
+            </div>
+          </div>
+
+          <div class="card__block">
+            <div class="card__block--squareOuterMedium">
+              <div class="card__block--squareInner card__block--blue">
+                <span class="card__label--medium">NS</span>
+              </div>
+            </div>
+
+            <div class="card__description">
+              <span class="dot"> &bull;</span> Noto Sans covers over 30 scripts
+            </div>
+          </div>
+        </div>
+
+        <!-- BUY FONTS -->
+        <div class="buyFont" id="buyFonts">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+          accusantium illo provident consequuntur impedit ipsam at perferendis
+          numquam debitis ullam soluta explicabo pariatur temporibus illum vel,
+          sunt error aliquam deleniti.
+        </div>
+      </main>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

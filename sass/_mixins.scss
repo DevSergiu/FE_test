@@ -1,0 +1,14 @@
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin label {
+  position: absolute;
+  padding: 1rem;
+  font-weight: 900;
+  opacity: 0.5;
+  color: #fff;
+}

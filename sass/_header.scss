@@ -1,0 +1,16 @@
+.nav {
+  grid-area: menu;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__links {
+    display: flex;
+    margin: auto 10px;
+  }
+  &__title {
+    display: flex;
+    align-self: center;
+    margin: 2px auto 10px 10px;
+  }
+}
+
